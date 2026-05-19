@@ -1,0 +1,7 @@
+# Takip edilen sanatçılar - her satıra bir isim
+# Yorumlar # ile başlar
+# Büyük/küçük harf duyarsız, kısmi eşleşme yapılır
+# Örnek:
+# Tale Of Us
+# Mind Against
+# Massano

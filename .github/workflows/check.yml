@@ -1,0 +1,55 @@
+name: Check New Releases
+
+on:
+  workflow_dispatch:  # Manuel tetikleme - GitHub UI'dan "Run workflow" butonu
+    inputs:
+      lookback_days:
+        description: 'Kaç gün geriye bakılsın (varsayılan 14)'
+        required: false
+        default: '14'
+
+permissions:
+  contents: write  # seen.json'u commitlemek için
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run music radar
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days }}
+        run: python -m src.main
+
+      - name: Commit updated state
+        run: |
+          git config user.name "music-radar-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/seen.json)" ]; then
+            git add data/seen.json
+            git commit -m "Update seen.json [skip ci]"
+            git push
+          else
+            echo "No state changes to commit."
+          fi

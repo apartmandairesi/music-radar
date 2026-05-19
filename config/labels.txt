@@ -1,0 +1,7 @@
+# Takip edilen label'lar - her satıra bir isim
+# Yorumlar # ile başlar
+# Örnek:
+# Afterlife
+# Anjunadeep
+# Innervisions
+# This Never Happened

@@ -1,0 +1,6 @@
+# Takip edilen SoundCloud sanatçı/label kullanıcı adları
+# URL'nin son kısmı: soundcloud.com/USERNAME → buraya USERNAME yaz
+# Örnek:
+# afterlifeofc
+# anjunadeep
+# taleofus
