@@ -1,7 +1,792 @@
-# Takip edilen label'lar - her satıra bir isim
-# Yorumlar # ile başlar
-# Örnek:
-# Afterlife
-# Anjunadeep
-# Innervisions
-# This Never Happened
+# Otomatik üretildi: _B arşivinden
+# Alfabetik, her satır 1 label
+
+!K7 Music
+!K7 Records
+100 Percent Pure
+100% Pure
+4th Floor Records
+8bit
+Abracadabra
+Abracadabra Music
+Accidental Records
+Acid Jazz
+AD 93
+AEON
+AF13 US
+Africa Seven
+African Shakedown
+Afterlife Records
+again..Records
+Age Of Self
+Aiwaska Planet
+All Night Long
+Alt Orient
+Altra Moda Music
+Amaeo
+Amancay
+Amazing!
+Anemos Dance
+Aniara Recordings
+Anims
+Anjunadeep
+Annulled
+Apparel Music
+Applied Magic
+Armada Electronic Elements
+Armada Music
+Arms & Legs
+Art Imitating Life
+Atjazz Record Company
+ATLANT
+Atlantic
+Atomnation
+Automatik
+Avenue 66
+Awesome Soundwave
+Azzur
+Bambossa Records
+Band Apart
+Baobab Music
+Bar 25 Music
+Bar Mediterraneo
+Bar25
+Bass Culture Records
+Bassclef Records
+Bastedos
+Because Music
+Bedrock Records
+Believe Music
+Belly Dance Services
+Belters
+BELTERS
+Berceuse Heroique
+Beton Brut
+Big Saldo’s Chunkers
+Bigamo
+Bigamo Musik
+Biologic Records
+Bitten
+Black Book Records
+Black Savana
+Bliss Point
+Blue Records
+Blue Shadow
+BMG
+BMG Company
+Bodytonic Music
+Bondage Music
+Bonfido Disques
+Bonzai Classics
+Booty Breaks
+Bordello A Parigi
+Borders Of Light
+Borders of Light
+BOSO
+Boysnoize Records
+Brainstream Music
+Braslive Records
+Break New Soil Recordings
+Breastfed
+Bunker Records
+Bunny Tiger
+Buttress
+Cacao Records
+Cajual
+Calamar Records
+Caribou
+Cecille
+Cecille Numbers
+Cecille Records
+Cercle Records
+Character
+Cheap Classics
+Chineurs de House
+Chorus Records
+Chroma
+Cin Cin
+Circoloco
+CircoLoco Records
+City Slang
+Claremont 56
+Clarisse Records
+Classic Music Company
+Clone
+Clone Club Series
+Clone Jack For Daze
+Clone Royal Oak
+Club Bad
+Club Sweat
+Cocktail d'Amore x Muting The Noise
+Cocoon
+Cocoon Recordings
+Cod3 QR
+COD3 QR
+Cognitive Prophecy
+Cold Tonic Records
+Colombia
+Columbia
+Columbia (Sony)
+Columbia - Sony
+Columbia Sony
+Complaint Kulture
+Compost
+Compost Records
+Connaisseur
+Connaisseur Recordings
+Connected Frontline
+Correspondant
+Counter Records
+Cr2 Records
+Craigie Knowes
+Crammed Discs
+Crash
+Creatures Of The Night
+Crib
+Crosstown Rabels
+Crosstown Rebels
+Cube Recordings
+Culprit
+Cult Order
+Cut
+D Records
+D.J. International Records
+Dancing People
+Dantze
+Dar Disku
+Dark Entries Records
+Darkroom Dubs
+David Gresham Records
+Deconstruction
+DEEWEE
+Deewee
+Defected
+Defected Records
+Degustibus
+Degustibus Music
+Dekmantel
+Delft Records
+Delsin
+Delsin Records
+Delusions Of Grandeur
+Dessert
+Dessous Recordings
+DFA
+DFA (Cooperative)
+DFA Records
+DFA Records Columbia
+DFTD
+DGTL
+Dial
+Didschn
+Different
+Digital Wax
+Dilate Records
+Dirty House
+Dirtybird
+Dischi Autunno
+Disco Halal
+Discotexas
+Disposable
+Distant Echoes
+DistroKid
+Diynamic
+Diynamic Music
+Dj Hell Experience
+Do The Taboo
+Domino
+Domino Recording
+Domino Records
+dOP only
+Drumcode
+Drumpoet Community
+Duro
+Dvision Records
+Dynamic Reflection
+Dystopian
+East End Dubs
+Ed Banger Records : Because Music
+Edible
+Edit Service
+Edit Service Vol 4 by Cosmo Vitelli
+Edita Music
+Eightball
+Eins Droid
+Ekleroshock
+Eleatics Records
+Electrique Music
+Electronic Music Community
+Ellum
+Ellum Audio
+Embassy One
+eMBi Music
+EMI
+Emotional Response
+Emperor Norton Records
+Empire State Records
+Engrave
+Engrave LTD
+Equation Records
+Equity
+Eskimo Recordings
+Exile
+Exit Strategy
+Exone
+Exploited
+Exploited Club
+Exploited Ghetto
+Fabric
+fabric Records
+Fachwerk Digital
+Fantastic Voyage
+Fatsouls Records
+Feel My Bicep
+Feines Tier
+FFRR
+Field Records
+Figure
+Flying Records
+Fool's Gold Records
+For Discos Only
+Fortuna Records
+Forum V
+Four Music
+FourTwenty Recordings
+Frank Music
+Frau Blau
+Freerange
+Freerange Records
+Frenetica
+Freude am Tanzen
+Friends 4 Ever
+Frooty Recordings
+Full Pupp
+FullTime Production
+Future Classic
+Future Disco
+Future Frequencies
+Futuro Advertising Agency
+F‑111 Records
+G-REX Music
+G.A.M.M
+Ganuz
+Geiser Discos
+Get Physical Music
+Get The Curse
+Gettraum
+Giegling
+Glasgow Underground
+Glitterbox Recordings
+Global Cuts
+Godmode
+Golf Channel Recordings
+Gomma
+Gomma Records
+Gonzai Records
+Good Vibes From Paradise
+Grief Into Rage
+Grief Into Range
+Gronland Records
+Gruuv
+Gudu Records
+Guerilla
+Gynoid Audio
+Gyroscope
+Habitat Recordings
+HABITAT Records
+Hadal
+Harmless Records
+Head To Toe
+Hear This Records
+Heavenly
+Heist Recordings
+Hell Yeah
+Henry Street Music
+Herzblut
+Herzblut Recordings
+Hfn Music
+HFN Music
+Higher Ground
+Highsnobiety
+Hippie Dance
+Hit Parade
+Hivern Disc
+Hivern Discs
+Hoito
+Holoverse Research Labs
+Hosted
+Hot Banana
+Hot Creations
+Hot Haus Recs
+Hotflush Recordings
+Hotline Miami Soundtrack
+Hottrax
+House'n Chips
+Hraach
+Human By Default
+Hyper Soul
+HZRX
+I'm a Cliche
+IAMSIAM
+Iconyc
+Impersonal Relationship
+Impressum
+Innervisions
+Instinct Records
+Intangible Records and Soundworks
+International DeeJay Gigolo Records
+International Deejay Gigolo Records
+International Feel
+Interpret
+IPSO
+Isolate
+Italians Do It Better
+Italo Deviance
+Italo Italians Records
+ITH (Defected In The House)
+Itzel Records
+I’m A Cliche
+Jackfruit Recordings
+Jalapeno Records
+JD Records
+Jiaolong
+John Henry Records
+Jump Source
+Juna Poly
+Just This
+K&S Records
+K7
+K7 Records
+KANN
+Karlovak
+Katermukke
+KD RAW
+Keinemusik
+Kinetika Music
+King Street Sounds
+Kiosk
+Kitsune Musique
+Kittball Records
+Klasse Wrecks
+Klockworks
+Kompakt
+KOMPAKT
+Kompakt Extra
+Kontrolleri
+Kunye
+L'enfant Terrible
+Laguna Records
+Last Night On Earth
+Lazy Days Recordings
+Le Chant Du Monde
+Leftroom Limited
+Legacy Recordings
+Les Yeux Orange
+Let's Get Lost
+Let's Get Lost 14
+Liebe Detail
+Life & Death
+Life And Death
+Life and Death
+Lion1Music
+Lipservice
+Live At Robert Johnson
+Live at Robert Johnson
+LM Trax
+Local Talk
+Logic Records
+Logistic Records
+London Records
+Lossless
+Lossless x Something Happening Somewhere
+Low Budget Family
+Lumiere Noire Records
+Lurid Music
+Luvlite Recordings
+LYAM
+M-Plant
+Maccabi House
+Madorasindahouse
+Madorasindahouse Records
+Maeve
+Maeve Records
+Magnifik
+Magnifik Music
+Major Lazer Records
+Major Underground
+Maktub Records
+Malka Tuti
+Malligator
+Mange
+Mantra Vibes
+Marcel Dettmann Records
+Marginalia
+Marvin & Guy Records
+Mas Tiempo
+Maschio
+Materia
+Material
+MAW Records
+MCA Records
+Me Me Me
+Meiosis Records
+Merc
+Mercury
+Metal & Dust
+Metaphysical
+microCastle
+Microcastle
+microCastle Music
+Midnight Riot Recordings
+Midnight Shift
+Mile End Records
+Millions Of Moments
+Ministry of Sound Recordings Limited
+Minus
+Mirau Musik
+Misfit Melodies
+Mistress Recordings
+Mixed Blood Cuts
+Mo Black
+Mobilee Records
+MoBlack
+MoBlack Records
+Moda Black
+Mojuba
+Monaberry
+Moneypennys Music
+Monkeytown Records
+Moodmusic
+Moodmusic Records
+Moon Harbour
+Moon Harbour Recordings
+Mother Recordings
+Motive Records
+Motown
+Move Like Me
+Mr. INT
+Muem Records
+Mule Electronic
+Mule Musiq
+Multi Culti
+Multinotes
+Music For Dreams
+Music To Dance To Records
+Musique de France
+Musique Pour La Danse
+Mute
+Mutual Rytm Germany
+Myor
+Myth Music
+N.E.W.S
+NAFF
+Natura Viva
+Nervous
+Nervous Records
+Neumatik
+New Energy
+NFS
+Night Drive Music
+Night Light Records
+Ninja Tune
+NINL
+No Art
+No Label
+No19 Music
+Nocturnal Hazard
+Noir Music
+Nonplus Records
+Nothing Is Real
+Nous'klaer Audio
+Novel Sound
+Novel Sound Releases
+Nu Groove Records
+Numbers
+NVH
+O'RS
+Objektivity
+Ocultismo
+OFF Spin
+Olindo Records
+Olsen Records
+Olsen Records (EU)
+OM Records
+On The Prowl
+One You Want
+Oni Ayhun Records
+Optimo Music
+Optimo Music Digital Danceforce
+Optimo Trax
+Organic Tunes
+Origin Records
+Oroom
+Oslo Records
+Ostgut Ton
+Ouie Circle
+Out Of Options
+Out Of The Loop Recordings
+Outra
+Ovum Recordings
+OwnIt Music
+Pampa
+Pampa Records
+Papaya Records Detroit
+Paper Recordings
+Parlophone Records
+Parlophone UK
+Pastamusik
+Peach Discs
+Peaks
+Peppermint Jam
+Permanent Vacation
+Perpetualis
+Persies
+Pets Recordings
+Phantasy
+Phantasy Sound
+Phil Kieran Recordings
+Philomena
+Phonica Records
+Pieces of Life
+Play It Again Sam
+Play It Down
+Play It Say It
+Play Pal Music
+Playground Music
+Playhouse
+Pleasure International Exports
+Pleasure of Love
+PMI Dance
+Podd Perje Productions
+Poker Flat
+Poker Flat Recordings
+Polydor Records
+Pop Tomorrow
+Power Music
+Pryda Recordings
+Public Possesion
+Public Possession
+Public Release
+Quirk
+R&S Records
+R2 Records
+Rabid
+RADIANT
+Radical Grid
+Radicalis
+Radikon
+RAL
+Rambling Records
+Raster-Noton
+Rat Life
+Raw Artistic Records
+Razor-N-Tape
+Razor-N-Tape Records
+RCA
+RCA Records
+Real Tone Records
+Real World Records
+Rebeat
+Rebelone
+Rebirth
+Rebirth Records
+Reculture
+Regraded
+Rekids
+Relief
+Renaissance Records
+Rendition
+Reprise Records
+Resista
+Retrolounge Records
+Rhythm Cult
+Riotvan
+RIP Version
+Rise Music
+Ritter Butzke Records
+RKJVK
+Robsoul
+Rockets & Ponies
+Rose Avenue
+Roule
+Rummel
+Rumors
+Running Back
+Safe Trip
+Salsoul Records
+Sanctuary
+Sanctuary Music
+Sangraal
+Sapiens
+Sapiens Recordings
+Saved Records
+Scarlet Tiger
+Schatrax
+Schnauzer
+SCI+TEC
+Scorpios Music
+Seamless Recordings
+Second Circle
+Second State
+Secret Fusion
+Sei Es Drum
+Selador
+Semi Delicious
+Sender Records
+Shall Not Fade
+Shinichi
+Siamese
+Sincopat
+Size Records
+Smalltown Supersound
+Smallville Records
+Smiley Fingers
+Snatch! Records
+Snork Enterprises
+Society 3.0
+Sohaso
+Sol Selectas
+Solide
+Soma Quality Recordings
+Soma Records
+Something Happening Somewhere
+Somethingnu
+Sonar Kollektiv
+Sondela Recordings
+Sony
+Sony Music
+Soul Clap Records
+Soul Quest Records
+Soulfuric Deep
+Soulstar Records
+Sound Of Vast
+Sounds Good Sound
+Soundway Records
+Sous Music
+Southern Fried Records
+Spaced Repetitions
+Spazio Disponibile
+Spin On This
+Spinnin' Deep
+Sterns Edits
+Stickman Records
+Stil Vor Talent
+Street King
+Strictly Rhythm
+Stride
+Studio Barnhus
+Suara
+Sub Pop
+Subliminal Records
+Sum Over Histories
+Suol
+Superconscious Records
+Superfriends Records
+Surrrealism
+System 108
+Systematic
+Systematic Recordings
+Tantra
+Tartan Records
+TAU
+Teardrop Recordings
+Technicolour
+Tenax Recordings
+Terrestrial Funk
+Text Records
+The Axes Files 001
+The Corner
+The Dj Hell Experience
+The Dub Records
+The Healing Company
+The Magic Movement
+The Moment
+The Night Land
+The Phantasy
+The Raptor Records
+The Soundgarden
+The Young Proprietor
+theBasementDiscos
+These Eyes
+These Eyes Recordings
+Third Ear Recordings
+Three Six Zero Recordings
+Throne of Blood
+Todd Terje Edits
+Token
+Too Many Rules
+Toolroom
+Tour De Infinite
+Toy Tonics
+Tram Planet Records
+Transgressive Records
+Trax Records
+Tribe Records
+Trip
+trndmsk
+Trndmsk
+Tropicana Records
+True Electric
+Trunkfunk Records
+Turbo
+Turbo Recordings
+Ultra
+Ultra Records
+Ulu Records
+Uluru Records
+Underground Construction
+United Music Records
+Universal Music
+Unknown To The Unknown
+Unofficial Release
+Unreleased Records
+URSL
+Versione Lenta
+Vertigo
+Vertigo Berlin
+Vesvese Records
+Vidab Records
+Vinyl On Demand
+Virgin
+Virgin Records
+Visionquest
+Visual Distortions
+VIVa MUSiC
+VOD
+Vokabularium
+Volt Musik
+Voyage Direct
+Vular
+W&O Street Tracks
+W+L Black
+Wah Wah 45s
+Warner Bros. Records
+Watergate Records
+We Belong
+We Play House Recordings
+We're Here
+When Stars Align
+When We Dip XYZ
+Whistleblower Records
+White Rose
+White Rose Recordings
+Whities Recordings
+Whities Records
+WHTSQR EDITS
+WHTSQREDITS
+Wolf + Lamb Records
+Wonderwheel Recordings
+x2 Recordings
+XII
+XL Recordings
+Yeah Recordings
+Yellow Productions
+Yo Bro Recordings
+Yoruba Records
+Yoshitoshi
+Young
+Young Turks
+Z Records
+Zagora
+ZIC GEMS
+Zone

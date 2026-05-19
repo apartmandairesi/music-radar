@@ -1,14 +1,17 @@
 """
 Release listesini takip edilen sanatçı/label listesi ile filtreler.
 
-Eşleştirme stratejisi: büyük/küçük harf duyarsız, kısmi (substring) eşleşme.
-'Tale Of Us' kaydı 'Tale Of Us & Mind Against' bir release'i de yakalar.
-Bu agresif ama bu domain'de doğru — sanatçılar sık sık birbirleriyle
-veya remix'lerde geçer ve kullanıcı bunları kaçırmak istemez.
+Eşleştirme stratejisi: büyük/küçük harf duyarsız, KELİME SINIRI EŞLEŞMESİ.
+"Ede" listesindeki sanatçı "Ede - Track" yakalar ama "Dedeman" değil.
+
+Tek karakterli isimler veya sayılarla başlayan "isimler" özel davranır:
+- "12 BPM" gibi gürültü isimleri sadece tam başa eşleşir
+- Normal isimler word-boundary ile eşleşir
 """
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -25,7 +28,6 @@ class Watchlist:
 
 
 def _read_list(path: Path) -> list[str]:
-    """Yorum satırlarını ve boşları atla, geri kalanı stripped olarak dön."""
     if not path.exists():
         log.warning("%s yok, boş liste döndürülüyor", path)
         return []
@@ -46,52 +48,70 @@ def load_watchlist(config_dir: Path) -> Watchlist:
     )
 
 
-def _ci_contains(haystack: str, needle: str) -> bool:
-    """Case-insensitive substring kontrolü."""
-    return needle.lower() in haystack.lower()
+def _make_pattern(name: str) -> re.Pattern:
+    """
+    Kelime sınırlı, case-insensitive regex pattern üretir.
+
+    "Ede" → r"(?<![\w&])Ede(?![\w])" → "Ede - Track" yakalar, "Dedeman" yakalamaz.
+    Özel karakterleri (& gibi) escape eder.
+
+    Negatif lookbehind/lookahead'de \w kullanarak harf+rakam+_ engellenir;
+    & gibi karakterler ile birleşik isimler için (&ME) başlangıçta & de izinli sayılır.
+    """
+    escaped = re.escape(name)
+    # Sol sınır: önce harf/rakam OLMAMALI ama & olabilir (örn. "feat. &ME")
+    # Sağ sınır: sonra harf/rakam OLMAMALI
+    pattern = r"(?<![A-Za-z0-9])" + escaped + r"(?![A-Za-z0-9])"
+    return re.compile(pattern, re.IGNORECASE)
+
+
+# Watchlist büyük olabilir (~2000 isim). Pattern'ları cache'leyelim.
+_pattern_cache: dict[str, re.Pattern] = {}
+
+
+def _get_pattern(name: str) -> re.Pattern:
+    if name not in _pattern_cache:
+        _pattern_cache[name] = _make_pattern(name)
+    return _pattern_cache[name]
 
 
 def match_release(release: Release, wl: Watchlist) -> tuple[bool, list[str]]:
-    """
-    Release watchlist'teki herhangi bir şeyle eşleşiyor mu?
-
-    Returns:
-        (matched, reasons) - reasons örnek: ["artist:Tale Of Us", "label:Afterlife"]
-    """
+    """Release watchlist'teki herhangi bir şeyle eşleşiyor mu?"""
     reasons: list[str] = []
 
-    # SoundCloud kaynaklı release'ler zaten takip listesindeki bir
-    # kullanıcıdan geldi, otomatik dahil
+    # SoundCloud release'leri zaten takip listesinden geldi
     if release.source.startswith("soundcloud:"):
         username = release.source.split(":", 1)[1]
         reasons.append(f"soundcloud:{username}")
         return True, reasons
 
-    # Aranan alanlar: artist, release_title, label, başlığın tamamı
-    search_blob = " | ".join([
+    # Sanatçı/title/raw_summary'de sanatçı ismi ara (kelime sınırlı)
+    artist_blob = " | ".join([
         release.artist,
         release.release_title,
-        release.label,
         release.title,
         release.raw_summary,
     ])
 
     for artist_name in wl.artists:
-        if _ci_contains(search_blob, artist_name):
+        # Çok kısa isimleri (1-2 karakter) atla - false positive cenneti
+        if len(artist_name) < 3:
+            continue
+        if _get_pattern(artist_name).search(artist_blob):
             reasons.append(f"artist:{artist_name}")
 
+    # Label sadece label/title alanlarında, kelime sınırlı
+    label_blob = f"{release.label} | {release.title}"
     for label_name in wl.labels:
-        # Label eşleştirmesi biraz daha sıkı - sadece label/title alanlarında ara
-        # Çünkü "Afterlife" sanatçı ismi olarak da geçebilir
-        label_blob = f"{release.label} | {release.title}"
-        if _ci_contains(label_blob, label_name):
+        if len(label_name) < 3:
+            continue
+        if _get_pattern(label_name).search(label_blob):
             reasons.append(f"label:{label_name}")
 
     return (len(reasons) > 0, reasons)
 
 
 def filter_matches(releases: list[Release], wl: Watchlist) -> list[tuple[Release, list[str]]]:
-    """Tüm release'leri tara, eşleşenleri (release, reasons) tuple'ları olarak dön."""
     out: list[tuple[Release, list[str]]] = []
     for r in releases:
         ok, reasons = match_release(r, wl)

@@ -9,3 +9,6 @@ venv/
 .DS_Store
 .DS_Store
 .DS_Store
+artists_extracted.txt
+labels_extracted.txt
+extract_watchlist.py
