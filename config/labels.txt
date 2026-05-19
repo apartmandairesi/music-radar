@@ -1,5 +1,4 @@
 # Otomatik üretildi: _B arşivinden
-# Alfabetik, her satır 1 label
 
 !K7 Music
 !K7 Records

@@ -95,7 +95,7 @@ def match_release(release: Release, wl: Watchlist) -> tuple[bool, list[str]]:
 
     for artist_name in wl.artists:
         # Çok kısa isimleri (1-2 karakter) atla - false positive cenneti
-        if len(artist_name) < 3:
+        if len(artist_name) < 4:
             continue
         if _get_pattern(artist_name).search(artist_blob):
             reasons.append(f"artist:{artist_name}")
@@ -103,7 +103,7 @@ def match_release(release: Release, wl: Watchlist) -> tuple[bool, list[str]]:
     # Label sadece label/title alanlarında, kelime sınırlı
     label_blob = f"{release.label} | {release.title}"
     for label_name in wl.labels:
-        if len(label_name) < 3:
+        if len(label_name) < 4:
             continue
         if _get_pattern(label_name).search(label_blob):
             reasons.append(f"label:{label_name}")

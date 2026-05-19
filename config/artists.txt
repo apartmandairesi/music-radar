@@ -1,7 +1,5 @@
-# Otomatik üretildi: _B arşivinden
-# Alfabetik, her satır 1 sanatçı
+# Otomatik üretildi: _B arşivinden (temiz parse)
 
-&lez
 &ME
 116 Deep
 12 Extended Disco
@@ -50,7 +48,6 @@ AF13 ft. Tyesha Blount
 Afefe Iku
 Afla Sackey
 Africaine 808
-Afro
 Afro Ambient
 Afro Celt Sound System
 Afro Extended
@@ -103,7 +100,6 @@ Ame Extended
 Ame Piano
 Amedee O Suriam
 Ameli Paul
-America
 Amine Edge
 Amor
 Amount
@@ -452,7 +448,6 @@ David Jackson
 David Kochs
 David Mayer
 Dawl
-Day
 Dazion
 De Gama
 Dead-Tones
@@ -772,7 +767,6 @@ HOSH ft. Jalja
 Hot
 Hot Natured ft. Ali Love
 Hot Since 82
-House
 House of Gypsies
 Howling
 Hraach
@@ -915,7 +909,6 @@ Joutro Mundo ft. JoeBlack
 Joy Division
 Joy O Belly
 Joy Orbison
-JT
 JT Almon ft. Angelica Bess
 Juan Luis Guerra
 Julian Koerndl
@@ -934,7 +927,6 @@ Justin VanDerVolgen
 Juxta Position
 K&F
 K.P
-K2
 Kadosh
 Kadosh (IL)
 Kadosh (IL) ft. Stereo MC's
@@ -979,7 +971,6 @@ Kevin McKay
 Kevin Saunderson ft. Inner City
 Kevorkian 12'
 Key Notez
-KH
 Kiberu
 Kid Cudi
 Kiki
@@ -1017,7 +1008,6 @@ Kotelett
 Kovacs Kati
 Kowton
 Kölsch
-KP
 Kptmichigan
 Kraak
 Kraftwerk
@@ -1051,7 +1041,6 @@ Lauer
 Laurent Garnier
 Lazare
 Lazaro Casanova
-LC
 LC Anderson
 LCD Soundsystem
 Leafar Legov
@@ -1203,7 +1192,6 @@ Maxi Mill
 Maxie Devine
 Mayra Andrade
 Maz
-Me
 Medlar
 Meera
 Meera (NO)
@@ -1226,7 +1214,6 @@ Metroplane
 MEUTE
 MGMT
 Mia Mendi
-Miami
 Michael Jackson
 Michael Mayer
 Michael Mayer Balearic
@@ -1257,7 +1244,6 @@ Mistakes Are Ok
 Mita Gami
 Mita Gami Sunrise
 Mixmasters
-MJ
 MJ Cole
 MKTL
 MmMiXX - Long
@@ -1382,7 +1368,6 @@ Nowa
 Noze Remix Extended Club
 Nsha
 Nthng
-Nu
 Nu Genea
 Nuno Dos Santos
 Nyaruach
@@ -1734,7 +1719,6 @@ Super Flu's ACJ
 Superpitcher
 Superpitcher Chapter A
 Superpitcher ft. Fantastic Twins
-SW
 Sween
 Syndenham Inc Vox
 T-Total
@@ -1754,7 +1738,6 @@ Tanner Ross
 Tantra
 Tato
 Tax
-TB
 Tears for Fears
 Tears For Fears
 Technotronic
@@ -1767,7 +1750,6 @@ Terrance Tee
 Terrence Parker
 Tesfit Asgodom
 Th3 Oth3r
-That
 The Alan Parsons Project
 The Ancient Moons
 The Bad Seeds
@@ -1808,7 +1790,6 @@ The XX
 The Zombies
 Theus Mago
 Thimble
-This
 Thodoris Triantafillou
 Thomas Bangalter
 Thomas Gandey
@@ -1942,7 +1923,6 @@ Yannick Labbe
 Yannick Labbé
 Yeah But No
 Yeah Yeah Yeahs
-Yes
 Yet More
 Yor Kultura
 Yoruba Soul
