@@ -37,14 +37,16 @@ except ImportError:
     HAS_CLOUDSCRAPER = False
 
 BLOG_FEEDS = {
-    "jkmk": "https://jkmk.net/feed/",
-    "elektrobeats": "https://elektrobeats.org/feed/",
     "electrobuzz": "https://www.electrobuzz.net/feed/",
     "themusicfire": "https://themusicfire.net/feed/",
 }
 
 # edmwaves özel - HTML ana sayfa (RSS'te label boş geliyor)
 EDMWAVES_HTML = "https://edmwaves.org/"
+
+# elektrobeats özel - Joomla, RSS bozuk, HTML ana sayfa + detay sayfaları
+ELEKTROBEATS_HTML = "https://elektrobeats.org/"
+ELEKTROBEATS_DETAIL_LIMIT = 30  # ana sayfadaki release sayısı
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
@@ -244,8 +246,124 @@ def _fetch_edmwaves_html() -> list[Release]:
     return releases
 
 
+# elektrobeats detay sayfalarındaki "Label: / Genre: / Style: / Released:" pattern'i
+# (her field kendi satırında, değer hemen alt satırda)
+_EB_FIELD_RE = re.compile(
+    r"^\s*(Label|Genre|Style|Released)\s*:?\s*$",
+    re.IGNORECASE,
+)
+
+
+def _eb_parse_detail(html: str) -> dict[str, str]:
+    """elektrobeats detay sayfasından label/genre/style/released çıkar."""
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text(separator="\n", strip=True)
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    meta: dict[str, str] = {}
+    for i, line in enumerate(lines):
+        m = _EB_FIELD_RE.match(line)
+        if m and i + 1 < len(lines):
+            key = m.group(1).lower()
+            val = lines[i + 1].strip()
+            if key not in meta and val:
+                meta[key] = val
+    return meta
+
+
+def _eb_parse_date(date_str: str) -> datetime | None:
+    """elektrobeats tarih formatı: DD.MM.YYYY → datetime UTC."""
+    m = re.match(r"^(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{4})$", date_str.strip())
+    if not m:
+        return None
+    day, month, year = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    try:
+        return datetime(year, month, day, tzinfo=timezone.utc)
+    except ValueError:
+        return None
+
+
+def _fetch_elektrobeats_html() -> list[Release]:
+    """
+    elektrobeats'i HTML olarak çek (Joomla, RSS bozuk).
+    Ana sayfadan release listesi, her release için detay sayfası → label/genre/date.
+    Detay başına ~70KB; 30 release için ~2MB ekstra trafik. Polite-fetch için
+    her detay arasında çok kısa bir gecikme uygulanır.
+    """
+    import time
+    html = _fetch(ELEKTROBEATS_HTML)
+    if not html:
+        return []
+
+    soup = BeautifulSoup(html, "html.parser")
+    albums = soup.select("div.albums")
+    if not albums:
+        log.warning("elektrobeats: 'div.albums' bulunamadı, HTML yapısı değişmiş olabilir")
+        return []
+
+    releases: list[Release] = []
+    detail_count = 0
+    for album in albums[:ELEKTROBEATS_DETAIL_LIMIT]:
+        title_div = album.select_one(".albums-title")
+        if not title_div:
+            continue
+
+        all_links = title_div.find_all("a", href=True)
+        if len(all_links) < 2:
+            continue
+
+        # Son link release detay sayfası, öncekiler artist'ler
+        release_link = all_links[-1]
+        release_path = release_link.get("href", "").strip()
+        release_title = release_link.get_text(strip=True)
+
+        artist_links = all_links[:-1]
+        artist_names = [a.get_text(strip=True) for a in artist_links if a.get_text(strip=True)]
+        artist = ", ".join(artist_names)
+
+        # Tam URL
+        if release_path.startswith("http"):
+            release_url = release_path
+        elif release_path.startswith("/"):
+            release_url = ELEKTROBEATS_HTML.rstrip("/") + release_path
+        else:
+            continue  # garip path, atla
+
+        # Detay sayfası
+        detail_html = _fetch(release_url)
+        time.sleep(0.3)  # polite-fetch
+        meta = _eb_parse_detail(detail_html) if detail_html else {}
+        detail_count += 1
+
+        # Date
+        published = None
+        if meta.get("released"):
+            published = _eb_parse_date(meta["released"])
+        if not published:
+            published = datetime.now(timezone.utc)
+
+        # Style daha spesifik (House/Techno), Genre daha geniş (Electronic)
+        genre = meta.get("style") or meta.get("genre", "")
+
+        full_title = f"{artist} – {release_title}" if artist else release_title
+
+        releases.append(Release(
+            source="elektrobeats",
+            title=full_title,
+            url=release_url,
+            published=published,
+            artist=artist,
+            release_title=release_title,
+            label=meta.get("label", ""),
+            genre=genre,
+            raw_summary=full_title[:500],
+        ))
+
+    log.info("elektrobeats HTML: %d release (%d detay sayfası çekildi)", len(releases), detail_count)
+    return releases
+
+
 def _fetch_rss(source_name: str, feed_url: str) -> list[Release]:
-    """Standart RSS feed parser (jkmk, elektrobeats, electrobuzz, themusicfire için)."""
+    """Standart RSS feed parser (electrobuzz, themusicfire için)."""
     content = _fetch(feed_url)
     if not content:
         return []
@@ -289,6 +407,8 @@ def fetch_blog_releases() -> list[Release]:
     releases: list[Release] = []
     log.info("Fetching edmwaves (HTML) ...")
     releases.extend(_fetch_edmwaves_html())
+    log.info("Fetching elektrobeats (HTML) ...")
+    releases.extend(_fetch_elektrobeats_html())
     for source_name, feed_url in BLOG_FEEDS.items():
         log.info("Fetching %s ...", source_name)
         releases.extend(_fetch_rss(source_name, feed_url))
