@@ -12,3 +12,7 @@ venv/
 artists_extracted.txt
 labels_extracted.txt
 extract_watchlist.py
+
+# Backup files from sed -i.bak and manual cp
+*.bak
+*.bak2

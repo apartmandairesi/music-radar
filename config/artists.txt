@@ -25,7 +25,6 @@ Abstract Division
 Abstraxion
 Abuk
 Ace of Base
-Acid
 Acid Arab
 Acid Coco
 Acid Pauli
@@ -288,7 +287,6 @@ Breekpunt
 Brian Cid
 Brian Cid Extinct Private
 Brokenears
-Brown
 Bruno Pronsato
 Bryan Kessler
 Buba
@@ -486,7 +484,6 @@ Despejado
 Destiny's Child
 Detlef
 Detroit Swindle
-Dez
 DF's Attention Vocal
 DFA Vocal
 Didier
@@ -553,7 +550,6 @@ Dorisburg
 Douglas McCarthy
 Downstream
 Drake
-Drums
 DSF
 DSF's Believe In U
 dubspeeka
@@ -764,7 +760,6 @@ Honey Dijon
 Honey Dijon ft. Latasha
 Hong Kong Trash
 HOSH ft. Jalja
-Hot
 Hot Natured ft. Ali Love
 Hot Since 82
 House of Gypsies
@@ -790,7 +785,6 @@ Ida Corr
 Idjut Boys
 Idris
 Igor Bartyuk
-III
 Ilario Alicante
 Illyus
 Ilo
@@ -844,7 +838,6 @@ Jansons
 Jarreau Vandal ft. Dotboi
 Jay Shepheard
 Jay West
-Jazz
 JD Twitch
 Jean Claude Ades
 Jefferson Airplane
@@ -917,7 +910,6 @@ Julie Pavon
 Juliet Sikora
 Julya Karma
 Jump Source
-Jungle
 Jupiter
 Jurgen Paape
 Jurgen Paape RP10
@@ -1062,7 +1054,6 @@ Life On Planets
 Lil Yachty
 Lilli Ellen
 Lilya Mandre
-Lime
 Lindstrom
 Lio
 Liva K
@@ -1075,7 +1066,6 @@ Lokkhi Terra
 Loleatta Holloway
 Loletta Holloway
 London Grammar
-Long
 Loopsize
 Lopezhouse
 LOR
@@ -1377,7 +1367,6 @@ O'Giv
 Obscure Shape
 Ocer
 Of The Moon
-Off
 Off The Meds
 Off The Meds Extended
 Olderic
@@ -1390,7 +1379,6 @@ Oliver Sim
 Omar Souleyman
 Omri Guetta
 Omri Smadar
-One
 One's 1984 Electro Synth Pop
 Oni Ayhun
 OOFT!
@@ -1454,7 +1442,6 @@ Phil Kieran
 Phonk D
 Phunkadelica
 Phunkadelica Dance
-Pig
 Pillow Talk
 Pillowtalk
 Pink Floyd
@@ -1501,7 +1488,6 @@ Rampa
 Rampa ft. Chuala
 Rampa vs. &ME
 Rancido ft. Kems
-Rave
 Re.you
 Ready In Led
 Rebolledo
@@ -1663,11 +1649,9 @@ SKALA
 Skatman
 Skream
 Skygroover
-Slam
 Slow Down ft. Jorja Smith
 Sluts'n'Strings
 Smaak ft. Romanthony
-Snap
 Snap!
 Sneaker
 Snilloc
@@ -1682,7 +1666,6 @@ Sonson
 Sonya Zlo
 Sophie Hunger
 Sosue Soulkomplex Main
-Soul
 Soul 223
 Soul Clap
 Soul Value
@@ -1799,7 +1782,6 @@ Three Less One ft. Olivia
 Thugfucker
 Tiefschwarz
 Tiga
-Tiger
 Tiger Stripes
 Tigerbalm ft. Farafi
 Tijn
@@ -1841,7 +1823,6 @@ Tripolism
 Tripolism Extended
 Trommer
 Truncate
-Tube
 Tuca
 Tuccillo
 Tuff City Kids
@@ -1876,7 +1857,6 @@ Victor Alc
 Victor C. ft. 1403
 Viet Rice Band
 Vijay Benedict
-Vinyl
 Virgil
 Visionquest
 Voodoocuts
@@ -1890,7 +1870,6 @@ Walter de Afogados
 WALTHER
 Wassermann
 Water Dog
-Wax
 Wax Motif
 Westbam
 Westbam ft. Richard Butler

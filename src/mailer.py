@@ -66,7 +66,7 @@ def _render_html(matches: list[tuple[Release, list[str]]]) -> str:
         genre = escape(release.genre) if release.genre else "—"
         pub = release.published.strftime("%Y-%m-%d")
 
-        reason_tags = "".join(f'<span class="tag">{escape(r)}</span>' for r in reasons)
+        reason_tags = " ".join(f'<span class="tag">{escape(r)}</span>' for r in reasons)
 
         listen_html = ""
         listen_links = release.enrichment.get("listen", {})
