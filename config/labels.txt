@@ -24,7 +24,6 @@ Alt Orient
 Altra Moda Music
 Amaeo
 Amancay
-Amazing!
 Anemos Dance
 Aniara Recordings
 Anims
@@ -38,7 +37,6 @@ Arms & Legs
 Art Imitating Life
 Atjazz Record Company
 ATLANT
-Atlantic
 Atomnation
 Automatik
 Avenue 66
@@ -65,7 +63,6 @@ Big Saldo’s Chunkers
 Bigamo
 Bigamo Musik
 Biologic Records
-Bitten
 Black Book Records
 Black Savana
 Bliss Point
@@ -98,7 +95,6 @@ Cecille
 Cecille Numbers
 Cecille Records
 Cercle Records
-Character
 Cheap Classics
 Chineurs de House
 Chorus Records
@@ -139,15 +135,12 @@ Counter Records
 Cr2 Records
 Craigie Knowes
 Crammed Discs
-Crash
 Creatures Of The Night
-Crib
 Crosstown Rabels
 Crosstown Rebels
 Cube Recordings
 Culprit
 Cult Order
-Cut
 D Records
 D.J. International Records
 Dancing People
@@ -176,7 +169,6 @@ DFA Records
 DFA Records Columbia
 DFTD
 DGTL
-Dial
 Didschn
 Different
 Digital Wax
@@ -226,9 +218,7 @@ Empire State Records
 Engrave
 Engrave LTD
 Equation Records
-Equity
 Eskimo Recordings
-Exile
 Exit Strategy
 Exone
 Exploited
@@ -297,7 +287,6 @@ Hadal
 Harmless Records
 Head To Toe
 Hear This Records
-Heavenly
 Heist Recordings
 Hell Yeah
 Henry Street Music
@@ -313,7 +302,6 @@ Hivern Disc
 Hivern Discs
 Hoito
 Holoverse Research Labs
-Hosted
 Hot Banana
 Hot Creations
 Hot Haus Recs
@@ -327,7 +315,6 @@ Hyper Soul
 HZRX
 I'm a Cliche
 IAMSIAM
-Iconyc
 Impersonal Relationship
 Impressum
 Innervisions
@@ -424,13 +411,10 @@ Marvin & Guy Records
 Mas Tiempo
 Maschio
 Materia
-Material
 MAW Records
 MCA Records
 Me Me Me
 Meiosis Records
-Merc
-Mercury
 Metal & Dust
 Metaphysical
 microCastle
@@ -441,7 +425,6 @@ Midnight Shift
 Mile End Records
 Millions Of Moments
 Ministry of Sound Recordings Limited
-Minus
 Mirau Musik
 Misfit Melodies
 Mistress Recordings
@@ -461,7 +444,6 @@ Moon Harbour
 Moon Harbour Recordings
 Mother Recordings
 Motive Records
-Motown
 Move Like Me
 Mr. INT
 Muem Records
@@ -473,7 +455,6 @@ Music For Dreams
 Music To Dance To Records
 Musique de France
 Musique Pour La Danse
-Mute
 Mutual Rytm Germany
 Myor
 Myth Music
@@ -500,7 +481,6 @@ Nous'klaer Audio
 Novel Sound
 Novel Sound Releases
 Nu Groove Records
-Numbers
 NVH
 O'RS
 Objektivity
@@ -524,7 +504,6 @@ Ostgut Ton
 Ouie Circle
 Out Of Options
 Out Of The Loop Recordings
-Outra
 Ovum Recordings
 OwnIt Music
 Pampa
@@ -535,13 +514,11 @@ Parlophone Records
 Parlophone UK
 Pastamusik
 Peach Discs
-Peaks
 Peppermint Jam
 Permanent Vacation
 Perpetualis
 Persies
 Pets Recordings
-Phantasy
 Phantasy Sound
 Phil Kieran Recordings
 Philomena
@@ -566,7 +543,6 @@ Pryda Recordings
 Public Possesion
 Public Possession
 Public Release
-Quirk
 R&S Records
 R2 Records
 Rabid
@@ -592,7 +568,6 @@ Rebirth Records
 Reculture
 Regraded
 Rekids
-Relief
 Renaissance Records
 Rendition
 Reprise Records
@@ -609,7 +584,6 @@ Rockets & Ponies
 Rose Avenue
 Roule
 Rummel
-Rumors
 Running Back
 Safe Trip
 Salsoul Records
@@ -672,13 +646,11 @@ Stickman Records
 Stil Vor Talent
 Street King
 Strictly Rhythm
-Stride
 Studio Barnhus
 Suara
 Sub Pop
 Subliminal Records
 Sum Over Histories
-Suol
 Superconscious Records
 Superfriends Records
 Surrrealism
@@ -721,15 +693,12 @@ Tram Planet Records
 Transgressive Records
 Trax Records
 Tribe Records
-Trip
 trndmsk
 Trndmsk
 Tropicana Records
 True Electric
 Trunkfunk Records
-Turbo
 Turbo Recordings
-Ultra
 Ultra Records
 Ulu Records
 Uluru Records
@@ -741,12 +710,10 @@ Unofficial Release
 Unreleased Records
 URSL
 Versione Lenta
-Vertigo
 Vertigo Berlin
 Vesvese Records
 Vidab Records
 Vinyl On Demand
-Virgin
 Virgin Records
 Visionquest
 Visual Distortions
@@ -788,4 +755,3 @@ Young Turks
 Z Records
 Zagora
 ZIC GEMS
-Zone

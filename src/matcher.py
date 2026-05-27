@@ -101,7 +101,7 @@ def match_release(release: Release, wl: Watchlist) -> tuple[bool, list[str]]:
             reasons.append(f"artist:{artist_name}")
 
     # Label sadece label/title alanlarında, kelime sınırlı
-    label_blob = f"{release.label} | {release.title}"
+    label_blob = release.label
     for label_name in wl.labels:
         if len(label_name) < 4:
             continue
